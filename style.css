@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+}
+
+body{
+    background: #FEF9F2;
+}
+header p{
+    height: 15vh;
+    /* border: 2px solid cyan; */
+    background: #789DBC;
+    color: white;
+    font-family: Verdana, 
+    Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 1.7em;   
+    text-align:left;
+    padding: 10px;
+
+}
+
+nav {
+    /* border: 3px solid cyan; */
+    min-height: 50px;
+    width: auto;
+    background: #FFE3E3;
+    font-size: 1.3em;
+}
+
+.navigation ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    padding-inline-start: 0;
+}
+.navigation li{
+    list-style: none;
+    /* border: 3px solid cyan; */
+    flex-direction:column;
+    height: 50px;
+    /* margin:0 30px 0 30px; */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+}
+
+#li1 {
+    border-right: 1px solid rgba(128, 128, 128, 0.274);
+}
+#li2 {
+    border-right: 1px solid rgba(128, 128, 128, 0.274);
+}
+
+.access {
+    display: grid;
+    width: 100%;
+    /* grid-template-columns: 50% 50%; */
+    /* border: 3px dashed rebeccapurple; */
+    justify-content: space-around;
+    margin-top: 30px;
+    padding-inline-start: 0;
+}
+
+form{
+    width: 350px;
+    left: 50%;
+    transform: translate(-50%);
+    display:grid;
+    /* border: 3px solid #657c6c; */
+    background: #C9E9D2;
+    border-radius: 10px;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 1fr 1fr 30px;
+    grid-template-areas:
+    "lb1 in1"
+    "lb2 in2"
+    "vi btn"
+    "vi a1"
+    "vi a2"
+    ;
+    align-items: center;
+    margin-left: 50%;
+    margin-right: 50%;
+    row-gap: 5px;
+    padding: 30px;
+}
+
+form #lb1 {
+    grid-area: lb1;
+}
+form #in1 {
+    grid-area: in1;
+    border: none;
+    border-radius: 3px;
+    height: 20px;
+}
+form #lb2 {
+    grid-area: lb2;
+}
+form #password {
+    grid-area: in2;
+    border: none;
+    border-radius: 3px;
+    height: 20px;
+}
+form #btn-submit {
+    grid-area: btn;
+    margin-top: 10px;
+    border: 1px solid #54C392;
+    border-radius: 3px;
+    height: 20px;
+    transition: 0.7s;
+}
+form #a1{
+    grid-area: a1;
+    margin-top: 20px;
+}
+form #a2 {
+    grid-area: a2;
+}
+
+#btn-submit:hover {
+    background: #54C392;
+    cursor: pointer;
+}

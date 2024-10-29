@@ -16,6 +16,5 @@ body {
     height: 100vh;
     background:rgba(214, 203, 203, 0.466);
     z-index: 2;
-    margin-top: 100px;
     overflow-y: scroll;
 }
